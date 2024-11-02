@@ -8,7 +8,7 @@ import Collections from './component/Collections';
 import Productcart from './component/Productcart';
 import Cart from './component/Cart/Cart';
 import LoginPage from './component/Page/LoginPage';
-import SignupPage from './component/page/SigupPage';
+import SignupPage from './component/Page/SignupPage';
 import LoginAndSigupPage from './component/Page/LoginAndSigupPage';
 import AdminProduct from './component/Admin/AdminProduct'; 
 import { AuthProvider} from './AuthContext';
