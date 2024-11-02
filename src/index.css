@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+    height: 100%;
+    margin: 0;
+  } */
+  
+  /* Main container for the app using CSS Grid */
+  .app-container {
+    display: grid; 
+     grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
+    background-image: url("./images/bac1.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+  }
+  
+  /* Content will take up the remaining space */
+  .content {
+    padding: 1rem;
+  }
+  
+  /* Footer styles */
+  .footer-container {
+    background-color: rgb(42, 107, 142);
+    color: white;
+    width: 100%;
+    position: relative;
+   bottom: 0;
+   left: 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-content .ml-auto {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  .font-bebas {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .commingsoonpadding{
+    padding: 1rem;
+  }

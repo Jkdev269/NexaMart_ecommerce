@@ -1,0 +1,163 @@
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ddd;
+  width: 80%;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url("bac1.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.cart-item {
+  flex: 1 1 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-details {
+  flex: 1 1 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-name {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.size-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.btn-size {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.size-button {
+  background-color: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.size-button:hover {
+  background-color: #333;
+}
+
+.product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.new-price {
+  font-size: 1.8em;
+  color: #e91e63;
+}
+
+.old-price {
+  font-size: 1.2em;
+  color: #825050;
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cart-container {
+    flex-direction:row;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .cart-item, .product-details {
+    flex: 1 1 100%;
+    padding: 10px;
+  
+  }
+
+  .product-name {
+    font-size: 1.5em;
+  }
+
+  .size-title {
+    font-size: 1em;
+  }
+
+  .new-price {
+    font-size: 1.5em;
+  }
+
+  .old-price {
+    font-size: 1em;
+  }
+
+  .add-to-cart {
+    font-size: 1em;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-name {
+    font-size: 1.2em;
+  }
+
+  .new-price {
+    font-size: 1.2em;
+  }
+
+  .old-price {
+    font-size: 0.9em;
+  }
+
+  .add-to-cart {
+    font-size: 0.9em;
+    height: 35px;
+  }
+}

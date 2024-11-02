@@ -1,0 +1,140 @@
+.containers{
+  margin-right: 10px;
+    position: relative;
+    border:3px solid rgb(154, 146, 146); 
+    border-radius: 7px;
+    
+  }
+  .container-img{
+    /* padding: 1rem; */
+   width: 100%;
+  border-radius: 1px;
+
+}
+.left-btn ,.right-btn{
+    position: absolute;
+    top: 40%;
+border-radius: 50%;
+   
+}
+
+.left-btn{
+    left:1px;
+
+}
+.right-btn{
+    right:1px;
+}
+
+
+/* card all item */
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .cart-item:hover{
+    transform: scale(1.05);
+    }
+  
+  .cart-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .product-details {
+    text-align: center;
+  }
+  
+  .product-name {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  .product-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .new-price {
+    font-size: 1.5em;
+    color: #e91e63;
+    margin-right: 8px;
+  }
+  
+  .old-price {
+    font-size: 1em;
+    color: #5d4444;
+    text-decoration: line-through;
+  }
+  @media (max-width: 1200px) {
+    /* .cart-item {
+      width: calc(50% - 32px);
+    } */
+  }
+  
+  @media (max-width: 768px) {
+    .cart-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cart-item {
+      width: 100%;
+      margin: 10px 0;
+      transition: transform 0.3s ease-in-out;
+    }
+    .cart-item:hover{
+      transform: scale(1.05);
+      }
+  
+    .left-btn, .right-btn {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .left-btn {
+      left:1px;
+    }
+  
+    .right-btn {
+      right:1px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cart-item {
+      padding: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .cart-item:hover{
+      transform: scale(1.05);
+      }
+    .product-name {
+      font-size: 1em;
+    }
+  
+    .new-price {
+      font-size: 1.2em;
+    }
+  
+    .old-price {
+      font-size: 0.9em;
+    }
+  }
+  
