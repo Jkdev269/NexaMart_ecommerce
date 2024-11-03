@@ -17,14 +17,14 @@ function Productcart() {
     const fetchProductDetails = async () => {
       try {
         const response = await getProductById(id);
-        console.log('API Response:', response);
+        // console.log('API Response:', response);
         if (!response || !response.data) {
           throw new Error('Product not found');
         }
         setProductDetails(response.data);
       } catch (err) {
         setError('Failed to fetch product details. Please try again later.');
-        console.error(err); // Log the error
+        // console.error(err); // Log the error
       } finally {
         setLoading(false);
       }
