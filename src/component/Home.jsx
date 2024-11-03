@@ -31,7 +31,7 @@ function Home({ searchQuery }) {
   })
   return <>
 
-    {/* <div className={styles.containers} onMouseEnter={() => clearInterval(ref.current)} onMouseLeave={() => ref.current = setInterval(handleNext, 2000)}>
+    <div className={styles.containers} onMouseEnter={() => clearInterval(ref.current)} onMouseLeave={() => ref.current = setInterval(handleNext, 2000)}>
       <div className={styles['left-btn']}>
         <button className='' onClick={handlePre}>{"<"}</button>
       </div>
@@ -39,7 +39,7 @@ function Home({ searchQuery }) {
       <div className={styles['right-btn']}>
         <button className='' onClick={handleNext}>{">"}</button>
       </div>
-    </div> */}
+    </div>
     <div className='text-center'>
       <span className='text-2xl font-bebas'>New Collection</span>
       <h1 class="__className_6a3ae9 text-6xl text-white font-bebas md:font-bebas">BRING IT ON</h1>
